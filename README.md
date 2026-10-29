@@ -16,9 +16,9 @@ Late on a chilly October night in 2026, right after wrapping up a grueling optim
 
 As an American CS undergrad and indie builder running Existential Cloud, my days are normally dominated by benchmark runs, circuit breakers, and shaving off Turn-0 token schemas.
 
-Taking time to step back from algorithmic metrics and actually gaze out at reality felt like opening a window in a crowded server closet and looking up at the night sky. I pulled up late-2026 observational papers from JWST, ecological surveys of subterranean mycorrhizal webs, deep-sea expeditions south of Tasmania, and cognitive philosophy papers from Munich and Cambridge.
+Taking time to step back from algorithmic metrics and actually gaze out at reality felt like opening a window in a crowded server closet and looking up at the night sky. I pulled up late-2026 observational papers from JWST, ecological surveys of subterranean mycorrhizal webs, deep-sea expeditions south of Tasmania, paleobotanical stomatal indices, the July 2024 Busy Beaver milestone, ASML High-NA lithography, quantum biology in avian eyes, and Freeman Dyson's physical eschatology.
 
-I synthesized those observations into this 10-chapter anthology: **Observations**.
+I synthesized those observations into this 15-chapter anthology: **Observations** (~14,300 words across 15 publication-grade essays).
 
 ---
 
@@ -36,6 +36,11 @@ I synthesized those observations into this 10-chapter anthology: **Observations*
 | **08** | [The Geothermal Engine](chapters/08_the_geothermal_engine.md) | Subsurface Lithoautotrophic Microbial Ecosystems (SLiMEs) thriving 5 kilometers deep in basalt; abiotic serpentinization splitting water and olivine into molecular hydrogen; *Candidatus Desulforudis audaxviator* surviving for millions of years on the radiolysis of uranium; and smectite clay veins packed with $10^{10}$ cells/cm³. |
 | **09** | [The Quantum Loom](chapters/09_the_quantum_loom.md) | Landauer's thermodynamic bound ($\Delta Q \ge k_B T \ln 2$); the illusion of costless computation; why unitary quantum mechanics is reversible but Quantum Error Correction (QEC) is fundamentally irreversible; erasing ancilla qubits at 15 millikelvin; and modern high-rate qLDPC code efficiency. |
 | **10** | [The Fragile Commons](chapters/10_the_fragile_commons.md) | Margaret Hamilton and Apollo 11 hand-woven core rope memory ("LOL memory") running in 72 KB ROM; modern software dependency bloat (hundreds of megabytes to center a button); the philosophy of the standard library and digital conservation; and the human thread connecting ancient rock to silicon thought. |
+| **11** | [The Stomata Clock](chapters/11_the_stomata_clock.md) | The hydraulic dilemma of terrestrial leaves; Stomatal Index $SI = \frac{S}{S+E}\times 100$; the Paleocene-Eocene Thermal Maximum (PETM, 56 Ma) in Wyoming's Bighorn Basin and high-Arctic Ellesmere Island; fossil *Ginkgo adiantoides* cuticles as deep-time $CO_2$ barometers; and planetary thermal inertia. |
+| **12** | [The Halting Boundary](chapters/12_the_halting_boundary.md) | Alan Turing's 1936 undecidability proof; the July 2024 bbchallenge victory proving $BB(5) = 47,176,870$ via the Coq proof assistant; the uncomputable wall at $BB(6) > 10 \uparrow\uparrow 15$; Collatz cryptids; Chaitin's algorithmic omega $\Omega = \sum 2^{-|p|}$; and the edge of axiomatic knowability. |
+| **13** | [The Silicon Crucible](chapters/13_the_silicon_crucible.md) | ASML High-NA EUV lithography (0.55 NA); 50,000 molten tin droplets a second blasted into 250,000°C plasma by pulsed TRUMPF $CO_2$ lasers; 13.5 nm EUV light guided by Zeiss Mo/Si Bragg multilayer mirrors polished to sub-angstrom flatness; Gate-All-Around nanosheets; and quantum tunneling gate leakage. |
+| **14** | [The Avian Compass](chapters/14_the_avian_compass.md) | The night migration of the European robin (*Erithacus rubecula*); the radical pair mechanism in retinal Cryptochrome 4 (ErCry4a); photon-driven electron hopping across 4 tryptophans to FAD; spin-singlet and triplet oscillations perturbed by Earth's 50 $\mu\text{T}$ field; and the 2025 discovery of anisotropic phosphoserine membrane anchoring. |
+| **15** | [The Epilogue of Iron](chapters/15_the_epilogue_of_iron.md) | Physical eschatology; Freeman Dyson's 1979 *Time Without End*; the five cosmic eras; quantum zero-point fluctuations driving pycnonuclear fusion over $10^{1500}$ years into Iron-56 stars; supermassive black hole Hawking evaporation over $10^{100}$ years; Dyson's scaling law; and the persistence of thought across eternity. |
 
 ---
 
@@ -46,16 +51,22 @@ Following the Existential Cloud **Zero-Dependency** standard, this repository in
 ### 1. Terminal Reader (`observations.py`)
 Run the pure Python stdlib terminal reader with smooth ANSI typography:
 ```bash
-# Read interactively (menu with chapters 1-10)
+# Read interactively (menu with chapters 1-15)
 python observations.py
 
 # Read a specific chapter instantly
-python observations.py -c 7 --instant
+python observations.py -c 15 --instant
+
+# Live full-text search across all 15 chapters
+python observations.py --search "cryptochrome"
+
+# Chapter metrics, word counts, and reading times
+python observations.py --stats
 
 # List all chapters and metadata
 python observations.py --list
 
-# Read all 10 chapters continuously
+# Read all 15 chapters continuously
 python observations.py --all --instant
 ```
 
@@ -63,7 +74,7 @@ python observations.py --all --instant
 Hand-crafted under our `anti-ai-web-craftsmanship` design guidelines:
 * No neon gradients, no generic glassmorphism cards.
 * Warm Japanese paper palette (`#F8F5EE`), deep ink typography, and eye-friendly dark stone mode (`#121314`).
-* Tabbed access across all 10 chapters with sticky chapter navigation and top reading progress indicator.
+* Tabbed access across all 15 chapters with sticky chapter navigation and top reading progress indicator.
 * Double-click [`viewer.html`](viewer.html) in your browser for an immediate offline reading sanctuary.
 
 ### 3. Markdown Source
@@ -73,11 +84,11 @@ Read the raw markdown files directly in GitHub or your favorite markdown editor 
 
 ## 🧪 Automated Test Suite
 
-The test suite validates chapter integrity, non-empty prose length, ANSI formatting, CLI options, and offline HTML assets:
+The test suite validates chapter integrity, non-empty prose length, ANSI formatting, CLI options, full-text search, and offline HTML assets:
 ```bash
 python -m unittest discover -s tests -v
 ```
-All 8 unit tests execute in under 0.05 seconds with zero external dependencies.
+All 11 unit tests execute in under 0.1 seconds with zero external dependencies.
 
 ---
 
