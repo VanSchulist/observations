@@ -44,6 +44,11 @@ CHAPTER_INFO = [
     {"num": 33, "slug": "33_the_alkaline_cradle.md", "short": "Alkaline Cradle", "tag": "Chapter 33 / Origin of Life"},
     {"num": 34, "slug": "34_the_caustic_lens.md", "short": "Caustic Lens", "tag": "Chapter 34 / Gravitational Lensing"},
     {"num": 35, "slug": "35_the_homeostatic_tide.md", "short": "Homeostatic Tide", "tag": "Chapter 35 / Neurobiology of Sleep"},
+    {"num": 36, "slug": "36_the_nanohertz_chorus.md", "short": "Nanohertz Chorus", "tag": "Chapter 36 / Gravitational Waves"},
+    {"num": 37, "slug": "37_the_radiotrophic_harvest.md", "short": "Radiotrophic Fungi", "tag": "Chapter 37 / Biophysics & Melanin"},
+    {"num": 38, "slug": "38_the_solar_scythe.md", "short": "Solar Scythe", "tag": "Chapter 38 / Planetary Dynamos"},
+    {"num": 39, "slug": "39_the_molecular_scissors.md", "short": "Molecular Scissors", "tag": "Chapter 39 / CRISPR Immunology"},
+    {"num": 40, "slug": "40_the_horizon_of_meaning.md", "short": "Horizon of Meaning", "tag": "Chapter 40 / Cosmological Synthesis"},
 ]
 
 def format_inline(text: str) -> str:

@@ -225,6 +225,36 @@ CHAPTERS: List[Dict[str, str]] = [
         "title": "The Homeostatic Tide and the Architecture of Sleep",
         "subtitle": "Hippocampal sharp-wave ripples at 200 Hz, Tononi's synaptic downscaling, and the gift of forgetting",
     },
+    {
+        "id": "36",
+        "file": "36_the_nanohertz_chorus.md",
+        "title": "The Nanohertz Chorus and the Cosmic Hum",
+        "subtitle": "Pulsar Timing Arrays, Hellings-Downs correlation, and millions of inspiraling supermassive black holes",
+    },
+    {
+        "id": "37",
+        "file": "37_the_radiotrophic_harvest.md",
+        "title": "The Radiotrophic Harvest and the Black Fungi",
+        "subtitle": "Chernobyl Reactor 4 melanin, gamma radiosynthesis, and life feeding on ionizing decay",
+    },
+    {
+        "id": "38",
+        "file": "38_the_solar_scythe.md",
+        "title": "The Solar Scythe and the Stripping of Worlds",
+        "subtitle": "MAVEN Mars atmospheric loss, dynamo collapse, and the protective magnetic shield of Earth",
+    },
+    {
+        "id": "39",
+        "file": "39_the_molecular_scissors.md",
+        "title": "The Molecular Scissors and the Microbial Archive",
+        "subtitle": "Bacterial phage wars, Cas9 PAM surveillance and R-loop cleavage, and adaptive immune memory",
+    },
+    {
+        "id": "40",
+        "file": "40_the_horizon_of_meaning.md",
+        "title": "The Horizon of Meaning and the Conscious Node",
+        "subtitle": "The 40-chapter synthesis: cosmic evolution, the silicon mirror, and the triumph of the witness",
+    },
 ]
 
 # ANSI escape codes for subtle warm terminal typography

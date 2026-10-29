@@ -18,7 +18,7 @@ As an American CS undergrad and indie builder running Existential Cloud, my days
 
 Taking time to step back from algorithmic metrics and actually gaze out at reality felt like opening a window in a crowded server closet and looking up at the night sky. I pulled up late-2026 observational papers from JWST, ecological surveys of subterranean mycorrhizal webs, deep-sea expeditions south of Tasmania, paleobotanical stomatal indices, the July 2024 Busy Beaver milestone, ASML High-NA lithography, quantum biology in avian eyes, Freeman Dyson's physical eschatology, redwood negative-pressure hydraulics, single-particle Cryo-EM vitrification, the AMOC ocean conveyor, CERN LHCb baryon CP violation, Project CETI's sperm whale phonetic alphabet, the DESI cosmic web map, the primordial ribosomal RNA engine, quantum spacetime foam constraints, fungal electrical spiking, and the geometry of sparse autoencoders.
 
-I synthesized those observations into this 35-chapter anthology: **Observations** (~38,400 words across 35 publication-grade essays).
+I synthesized those observations into this 40-chapter anthology: **Observations** (~44,300 words across 40 publication-grade essays).
 
 ---
 
@@ -61,6 +61,11 @@ I synthesized those observations into this 35-chapter anthology: **Observations*
 | **33** | [The Alkaline Cradle and the Proton Engine](chapters/33_the_alkaline_cradle.md) | The Lost City Hydrothermal Field on the Atlantis Massif; ultramafic olivine serpentinization producing warm alkaline effluents (pH 9–11) packed with $H_2$; Hadean acidic oceans; and natural inorganic proton gradients ($\Delta\text{pH} \approx 4.5$) driving prebiotic metabolism before the origin of ATP synthase. |
 | **34** | [The Caustic Lens and the Invisible Clumps](chapters/34_the_caustic_lens.md) | Gravitational lensing as cosmic telescopes; Earendel (WHL0137-LS) at $z = 6.2$ magnified 4,000x to 40,000x across the Sunrise Arc; and using caustic ripples to probe cold dark matter subhalos down to solar-mass scales. |
 | **35** | [The Homeostatic Tide and the Architecture of Sleep](chapters/35_the_homeostatic_tide.md) | The evolutionary necessity of sleep; hippocampal Sharp-Wave Ripples (150–250 Hz) replaying daytime experience to neocortex at 20x speed; Giulio Tononi's Synaptic Homeostasis Hypothesis (SHY); global dendritic downscaling; and forgetting as the engine of abstraction. |
+| **36** | [The Nanohertz Chorus and the Cosmic Hum](chapters/36_the_nanohertz_chorus.md) | Pulsar Timing Arrays (NANOGrav 15-year dataset, EPTA, PPTA, CPTA); the quadrupolar Hellings-Downs correlation curve; and the stochastic gravitational wave background humming from millions of inspiraling supermassive black hole binaries. |
+| **37** | [The Radiotrophic Harvest and the Black Fungi](chapters/37_the_radiotrophic_harvest.md) | The ruins of Chernobyl Reactor No. 4; *Cladosporium sphaerospermum* and *Wangiella dermatitidis* converting gamma radiation into metabolic energy via radiosynthesis; and melanin as a quantum radical sponge. |
+| **38** | [The Solar Scythe and the Stripping of Worlds](chapters/38_the_solar_scythe.md) | Ancient wet Mars vs desiccated wasteland; MAVEN spacecraft measuring atmospheric ion loss and photochemical sputtering; planetary dynamo collapse; and the geodynamo shield that preserves Earth's oceans. |
+| **39** | [The Molecular Scissors and the Microbial Archive](chapters/39_the_molecular_scissors.md) | The billion-year bacterial war against $10^{31}$ bacteriophages; Francisco Mojica's discovery of viral spacer memory; Cas9 PAM surveillance, R-loop melting, and double-strand blunt cleaving; and the phage Anti-CRISPR counter-arms race. |
+| **40** | [The Horizon of Meaning and the Conscious Node](chapters/40_the_horizon_of_meaning.md) | The grand 40-chapter cosmological synthesis; from the first stars to the iron eschatology; the silicon mirror of human language; and why conscious observation is the ultimate act of resistance against cosmic entropy. |
 
 ---
 
@@ -71,13 +76,13 @@ Following the Existential Cloud **Zero-Dependency** standard, this repository in
 ### 1. Terminal Reader (`observations.py`)
 Run the pure Python stdlib terminal reader with smooth ANSI typography:
 ```bash
-# Read interactively (menu with chapters 1-35)
+# Read interactively (menu with chapters 1-40)
 python observations.py
 
 # Read a specific chapter instantly
-python observations.py -c 35 --instant
+python observations.py -c 40 --instant
 
-# Live full-text search across all 35 chapters
+# Live full-text search across all 40 chapters
 python observations.py --search "ribozyme"
 
 # Chapter metrics, word counts, and reading times
@@ -86,7 +91,7 @@ python observations.py --stats
 # List all chapters and metadata
 python observations.py --list
 
-# Read all 35 chapters continuously
+# Read all 40 chapters continuously
 python observations.py --all --instant
 ```
 
@@ -94,7 +99,7 @@ python observations.py --all --instant
 Hand-crafted under our `anti-ai-web-craftsmanship` design guidelines:
 * No neon gradients, no generic glassmorphism cards.
 * Warm Japanese paper palette (`#F8F5EE`), deep ink typography, and eye-friendly dark stone mode (`#121314`).
-* Tabbed access across all 35 chapters with sticky chapter navigation and top reading progress indicator.
+* Tabbed access across all 40 chapters with sticky chapter navigation and top reading progress indicator.
 * Double-click [`viewer.html`](viewer.html) in your browser for an immediate offline reading sanctuary.
 
 ### 3. Markdown Source
