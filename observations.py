@@ -105,6 +105,36 @@ CHAPTERS: List[Dict[str, str]] = [
         "title": "The Epilogue of Iron",
         "subtitle": "Freeman Dyson's Time Without End, pycnonuclear fusion, 10^1500 iron stars, and eternal thought",
     },
+    {
+        "id": "16",
+        "file": "16_the_glass_siphon.md",
+        "title": "The Glass Siphon",
+        "subtitle": "Metastable negative pressure (-3 MPa), redwood hydraulics, and torus-margo pit valves",
+    },
+    {
+        "id": "17",
+        "file": "17_the_cryogenic_vault.md",
+        "title": "The Cryogenic Vault",
+        "subtitle": "Vitrification in liquid ethane at 10^5 C/s, amorphous glass ice, and sub-1.5 A cryo-EM",
+    },
+    {
+        "id": "18",
+        "file": "18_the_oceanic_conveyor.md",
+        "title": "The Oceanic Conveyor",
+        "subtitle": "The 18-Sverdrup AMOC heat engine, Greenland brine rejection, and the 2024 tipping bifurcation",
+    },
+    {
+        "id": "19",
+        "file": "19_the_asymmetry_of_time.md",
+        "title": "The Asymmetry of Time",
+        "subtitle": "Sakharov baryogenesis, the one-in-a-billion matter surplus, and 2025 CERN LHCb baryon CPV",
+    },
+    {
+        "id": "20",
+        "file": "20_the_silent_chorus.md",
+        "title": "The Silent Chorus",
+        "subtitle": "Sperm whale combinatorial codas, Project CETI's phonetic alphabet, and deep-sea syntax",
+    },
 ]
 
 # ANSI escape codes for subtle warm terminal typography

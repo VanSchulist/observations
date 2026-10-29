@@ -16,9 +16,9 @@ Late on a chilly October night in 2026, right after wrapping up a grueling optim
 
 As an American CS undergrad and indie builder running Existential Cloud, my days are normally dominated by benchmark runs, circuit breakers, and shaving off Turn-0 token schemas.
 
-Taking time to step back from algorithmic metrics and actually gaze out at reality felt like opening a window in a crowded server closet and looking up at the night sky. I pulled up late-2026 observational papers from JWST, ecological surveys of subterranean mycorrhizal webs, deep-sea expeditions south of Tasmania, paleobotanical stomatal indices, the July 2024 Busy Beaver milestone, ASML High-NA lithography, quantum biology in avian eyes, and Freeman Dyson's physical eschatology.
+Taking time to step back from algorithmic metrics and actually gaze out at reality felt like opening a window in a crowded server closet and looking up at the night sky. I pulled up late-2026 observational papers from JWST, ecological surveys of subterranean mycorrhizal webs, deep-sea expeditions south of Tasmania, paleobotanical stomatal indices, the July 2024 Busy Beaver milestone, ASML High-NA lithography, quantum biology in avian eyes, Freeman Dyson's physical eschatology, redwood negative-pressure hydraulics, single-particle Cryo-EM vitrification, the AMOC ocean conveyor, CERN LHCb baryon CP violation, and Project CETI's sperm whale phonetic alphabet.
 
-I synthesized those observations into this 15-chapter anthology: **Observations** (~14,300 words across 15 publication-grade essays).
+I synthesized those observations into this 20-chapter anthology: **Observations** (~20,200 words across 20 publication-grade essays).
 
 ---
 
@@ -41,6 +41,11 @@ I synthesized those observations into this 15-chapter anthology: **Observations*
 | **13** | [The Silicon Crucible](chapters/13_the_silicon_crucible.md) | ASML High-NA EUV lithography (0.55 NA); 50,000 molten tin droplets a second blasted into 250,000°C plasma by pulsed TRUMPF $CO_2$ lasers; 13.5 nm EUV light guided by Zeiss Mo/Si Bragg multilayer mirrors polished to sub-angstrom flatness; Gate-All-Around nanosheets; and quantum tunneling gate leakage. |
 | **14** | [The Avian Compass](chapters/14_the_avian_compass.md) | The night migration of the European robin (*Erithacus rubecula*); the radical pair mechanism in retinal Cryptochrome 4 (ErCry4a); photon-driven electron hopping across 4 tryptophans to FAD; spin-singlet and triplet oscillations perturbed by Earth's 50 $\mu\text{T}$ field; and the 2025 discovery of anisotropic phosphoserine membrane anchoring. |
 | **15** | [The Epilogue of Iron](chapters/15_the_epilogue_of_iron.md) | Physical eschatology; Freeman Dyson's 1979 *Time Without End*; the five cosmic eras; quantum zero-point fluctuations driving pycnonuclear fusion over $10^{1500}$ years into Iron-56 stars; supermassive black hole Hawking evaporation over $10^{100}$ years; Dyson's scaling law; and the persistence of thought across eternity. |
+| **16** | [The Glass Siphon](chapters/16_the_glass_siphon.md) | Evangelista Torricelli's 10.3-meter barometric ceiling vs. 115-meter coast redwoods (*Sequoia sempervirens*); Dixon-Joly Cohesion-Tension theory; water under negative tensile pressure ($-3$ MPa); thermodynamic liquid metastability; cavitation and acoustic clicks; and bordered pit torus-margo microfluidic valves. |
+| **17** | [The Cryogenic Vault](chapters/17_the_cryogenic_vault.md) | Overcoming Abbe's diffraction limit and high-vacuum dehydration; Jacques Dubochet's vitrification in liquid ethane at $>10^5\text{ }^\circ\text{C}/\text{s}$; amorphous glass ice preventing crystal destruction; single-particle Cryo-EM Fourier slice reconstruction; and sub-1.5 Å continuous conformational energy landscapes. |
+| **18** | [The Oceanic Conveyor](chapters/18_the_oceanic_conveyor.md) | Harald Sverdrup's unit ($1\text{ Sv} = 10^6\text{ m}^3/\text{s}$); the 15–18 Sv Atlantic Meridional Overturning Circulation (AMOC); subpolar North Atlantic brine rejection driving North Atlantic Deep Water (NADW); and René van Westen's 2024 *Science Advances* proof of the 0.3 Sv freshwater tipping point and hysteresis bifurcation. |
+| **19** | [The Asymmetry of Time](chapters/19_the_asymmetry_of_time.md) | Paul Dirac's positron and matter-antimatter symmetry; Andrei Sakharov's 1967 three baryogenesis conditions; the one-in-a-billion matter surplus ($\eta \approx 6 \times 10^{-10}$) surviving annihilation; the CKM matrix; and the 2025 CERN LHCb $5.2\sigma$ milestone discovery of CP violation in baryon decays ($\Lambda_b^0 \to p K^- \pi^+ \pi^-$). |
+| **20** | [The Silent Chorus](chapters/20_the_silent_chorus.md) | Jacques Cousteau's acoustic misnomer; sperm whales (*Physeter macrocephalus*) with 8-kg brains and 236 dB spermaceti shockwaves; the May 2024 *Nature Communications* Project CETI and MIT CSAIL discovery of the sperm whale combinatorial phonetic alphabet across four axes: rhythm, tempo, rubato, and ornamentation. |
 
 ---
 
@@ -51,14 +56,14 @@ Following the Existential Cloud **Zero-Dependency** standard, this repository in
 ### 1. Terminal Reader (`observations.py`)
 Run the pure Python stdlib terminal reader with smooth ANSI typography:
 ```bash
-# Read interactively (menu with chapters 1-15)
+# Read interactively (menu with chapters 1-20)
 python observations.py
 
 # Read a specific chapter instantly
-python observations.py -c 15 --instant
+python observations.py -c 20 --instant
 
-# Live full-text search across all 15 chapters
-python observations.py --search "cryptochrome"
+# Live full-text search across all 20 chapters
+python observations.py --search "Sverdrup"
 
 # Chapter metrics, word counts, and reading times
 python observations.py --stats
@@ -66,7 +71,7 @@ python observations.py --stats
 # List all chapters and metadata
 python observations.py --list
 
-# Read all 15 chapters continuously
+# Read all 20 chapters continuously
 python observations.py --all --instant
 ```
 
@@ -74,7 +79,7 @@ python observations.py --all --instant
 Hand-crafted under our `anti-ai-web-craftsmanship` design guidelines:
 * No neon gradients, no generic glassmorphism cards.
 * Warm Japanese paper palette (`#F8F5EE`), deep ink typography, and eye-friendly dark stone mode (`#121314`).
-* Tabbed access across all 15 chapters with sticky chapter navigation and top reading progress indicator.
+* Tabbed access across all 20 chapters with sticky chapter navigation and top reading progress indicator.
 * Double-click [`viewer.html`](viewer.html) in your browser for an immediate offline reading sanctuary.
 
 ### 3. Markdown Source

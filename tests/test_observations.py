@@ -19,8 +19,8 @@ class TestObservationsIntegrity(unittest.TestCase):
     """Validates chapter files and literary asset consistency."""
 
     def test_all_chapters_exist(self) -> None:
-        """Verifies that all 15 declared chapter files exist and have substantial text."""
-        self.assertEqual(len(observations.CHAPTERS), 15)
+        """Verifies that all 20 declared chapter files exist and have substantial text."""
+        self.assertEqual(len(observations.CHAPTERS), 20)
         for chap in observations.CHAPTERS:
             path = PROJECT_ROOT / "chapters" / chap["file"]
             self.assertTrue(path.exists(), f"Missing chapter file: {path}")
@@ -55,7 +55,7 @@ class TestObservationsIntegrity(unittest.TestCase):
         self.assertIn("─", hr)
 
     def test_viewer_html_exists_and_contains_chapters(self) -> None:
-        """Verifies standalone viewer.html is valid, offline-ready, and has content across all 15 chapters."""
+        """Verifies standalone viewer.html is valid, offline-ready, and has content across all 20 chapters."""
         viewer_path = PROJECT_ROOT / "viewer.html"
         self.assertTrue(viewer_path.exists())
         html = viewer_path.read_text(encoding="utf-8")
@@ -67,13 +67,18 @@ class TestObservationsIntegrity(unittest.TestCase):
         self.assertIn("The Silicon Crucible", html)
         self.assertIn("The Avian Compass", html)
         self.assertIn("The Epilogue of Iron", html)
+        self.assertIn("The Glass Siphon", html)
+        self.assertIn("The Cryogenic Vault", html)
+        self.assertIn("The Oceanic Conveyor", html)
+        self.assertIn("The Asymmetry of Time", html)
+        self.assertIn("The Silent Chorus", html)
 
 
 class TestObservationsCLI(unittest.TestCase):
     """Validates CLI command line options and execution."""
 
     def test_cli_list_flag(self) -> None:
-        """Verifies --list flag outputs all 15 chapters."""
+        """Verifies --list flag outputs all 20 chapters."""
         old_stdout = sys.stdout
         sys.stdout = buffer = io.StringIO()
         try:
@@ -81,9 +86,9 @@ class TestObservationsCLI(unittest.TestCase):
             observations.main()
             output = buffer.getvalue()
             self.assertIn("Chapter 1: The Fires in Deep Time", output)
-            self.assertIn("Chapter 5: Monologue of the Silicon Gaze", output)
             self.assertIn("Chapter 10: The Fragile Commons", output)
             self.assertIn("Chapter 15: The Epilogue of Iron", output)
+            self.assertIn("Chapter 20: The Silent Chorus", output)
         finally:
             sys.stdout = old_stdout
 
@@ -100,17 +105,17 @@ class TestObservationsCLI(unittest.TestCase):
         finally:
             sys.stdout = old_stdout
 
-    def test_cli_chapter_15_render(self) -> None:
-        """Verifies --chapter 15 --instant renders chapter 15."""
+    def test_cli_chapter_20_render(self) -> None:
+        """Verifies --chapter 20 --instant renders chapter 20."""
         old_stdout = sys.stdout
         sys.stdout = buffer = io.StringIO()
         try:
-            sys.argv = ["observations", "-c", "15", "--instant"]
+            sys.argv = ["observations", "-c", "20", "--instant"]
             observations.main()
             output = buffer.getvalue()
-            self.assertIn("Chapter 15: The Epilogue of Iron", output)
-            self.assertIn("Freeman Dyson", output)
-            self.assertIn("Iron-56", output)
+            self.assertIn("Chapter 20: The Silent Chorus", output)
+            self.assertIn("Project CETI", output)
+            self.assertIn("Nature Communications", output)
         finally:
             sys.stdout = old_stdout
 
@@ -122,7 +127,7 @@ class TestObservationsCLI(unittest.TestCase):
             sys.argv = ["observations", "--stats"]
             observations.main()
             output = buffer.getvalue()
-            self.assertIn("Total (15 Chapters)", output)
+            self.assertIn("Total (20 Chapters)", output)
             self.assertIn("Words", output)
             self.assertIn("Est. Read Time", output)
         finally:
@@ -133,11 +138,11 @@ class TestObservationsCLI(unittest.TestCase):
         old_stdout = sys.stdout
         sys.stdout = buffer = io.StringIO()
         try:
-            sys.argv = ["observations", "--search", "cryptochrome"]
+            sys.argv = ["observations", "--search", "Sverdrup"]
             observations.main()
             output = buffer.getvalue()
             self.assertIn("Search results for query:", output)
-            self.assertIn("Chapter 14: The Avian Compass", output)
+            self.assertIn("Chapter 18: The Oceanic Conveyor", output)
         finally:
             sys.stdout = old_stdout
 
@@ -149,7 +154,7 @@ class TestObservationsCLI(unittest.TestCase):
             sys.argv = ["observations", "--search", "xylophone_supercluster_404"]
             observations.main()
             output = buffer.getvalue()
-            self.assertIn("No matching passages found across all 15 chapters.", output)
+            self.assertIn("No matching passages found across all 20 chapters.", output)
         finally:
             sys.stdout = old_stdout
 

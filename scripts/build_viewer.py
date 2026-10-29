@@ -24,6 +24,11 @@ CHAPTER_INFO = [
     {"num": 13, "slug": "13_the_silicon_crucible.md", "short": "Silicon Crucible", "tag": "Chapter 13 / Lithography"},
     {"num": 14, "slug": "14_the_avian_compass.md", "short": "Avian Compass", "tag": "Chapter 14 / Quantum Biology"},
     {"num": 15, "slug": "15_the_epilogue_of_iron.md", "short": "Epilogue of Iron", "tag": "Chapter 15 / Deep Time"},
+    {"num": 16, "slug": "16_the_glass_siphon.md", "short": "Glass Siphon", "tag": "Chapter 16 / Plant Hydraulics"},
+    {"num": 17, "slug": "17_the_cryogenic_vault.md", "short": "Cryogenic Vault", "tag": "Chapter 17 / Cryo-EM"},
+    {"num": 18, "slug": "18_the_oceanic_conveyor.md", "short": "Ocean Conveyor", "tag": "Chapter 18 / Thermohaline"},
+    {"num": 19, "slug": "19_the_asymmetry_of_time.md", "short": "Asymmetry of Time", "tag": "Chapter 19 / Particle Physics"},
+    {"num": 20, "slug": "20_the_silent_chorus.md", "short": "Silent Chorus", "tag": "Chapter 20 / Bioacoustics"},
 ]
 
 def format_inline(text: str) -> str:
@@ -486,7 +491,7 @@ def main():
 {articles_html}
 
     <footer class="colophon">
-      <p>Observations · 15 Essays on Deep Time, Living Systems, and Human Consciousness</p>
+      <p>Observations · 20 Essays on Deep Time, Living Systems, and Human Consciousness</p>
       <p>Hand-crafted with zero third-party dependencies by Van Schulist (@VanSchulist / Existential Cloud)</p>
       <p style="margin-top: 8px; opacity: 0.7;">Open Source · MIT / CC BY-NC-SA 4.0</p>
     </footer>
@@ -537,7 +542,7 @@ def main():
     out_path = BASE_DIR / "viewer.html"
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html_content)
-    print(f"Successfully generated {out_path} ({len(html_content):,} bytes, 15 chapters)")
+    print(f"Successfully generated {out_path} ({len(html_content):,} bytes, {len(CHAPTER_INFO)} chapters)")
 
 if __name__ == "__main__":
     main()
