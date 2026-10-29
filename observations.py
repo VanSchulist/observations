@@ -195,6 +195,36 @@ CHAPTERS: List[Dict[str, str]] = [
         "title": "The Entropy of Forgetting",
         "subtitle": "Landauer's limit (kB T ln 2), Bennett's reversible logic, and the thermodynamic cost of thought",
     },
+    {
+        "id": "31",
+        "file": "31_the_muon_wobble.md",
+        "title": "The Muon Wobble and the Lattice Horizon",
+        "subtitle": "Fermilab g-2 at 127 ppb, BMW ab initio Lattice QCD, and the 5-sigma anomaly resolution",
+    },
+    {
+        "id": "32",
+        "file": "32_the_broken_mirror.md",
+        "title": "The Broken Mirror and Cosmic Homochirality",
+        "subtitle": "Weak force parity violation, interstellar circularly polarized light, and Murchison L-amino acids",
+    },
+    {
+        "id": "33",
+        "file": "33_the_alkaline_cradle.md",
+        "title": "The Alkaline Cradle and the Proton Engine",
+        "subtitle": "Lost City ultramafic serpentinization, natural Hadean proton gradients, and Russell-Lane chemiosmosis",
+    },
+    {
+        "id": "34",
+        "file": "34_the_caustic_lens.md",
+        "title": "The Caustic Lens and the Invisible Clumps",
+        "subtitle": "Einstein critical curves, Earendel at z=6.2 magnified 4,000x, and cold dark matter subhalos",
+    },
+    {
+        "id": "35",
+        "file": "35_the_homeostatic_tide.md",
+        "title": "The Homeostatic Tide and the Architecture of Sleep",
+        "subtitle": "Hippocampal sharp-wave ripples at 200 Hz, Tononi's synaptic downscaling, and the gift of forgetting",
+    },
 ]
 
 # ANSI escape codes for subtle warm terminal typography

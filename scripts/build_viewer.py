@@ -39,6 +39,11 @@ CHAPTER_INFO = [
     {"num": 28, "slug": "28_the_cephalopod_synapse.md", "short": "Cephalopod Synapse", "tag": "Chapter 28 / Neurobiology"},
     {"num": 29, "slug": "29_the_magnetar_pulse.md", "short": "Magnetar Pulse", "tag": "Chapter 29 / High-Energy Astrophysics"},
     {"num": 30, "slug": "30_the_entropy_of_forgetting.md", "short": "Entropy of Forgetting", "tag": "Chapter 30 / Thermodynamics of Mind"},
+    {"num": 31, "slug": "31_the_muon_wobble.md", "short": "Muon Wobble", "tag": "Chapter 31 / Precision QED"},
+    {"num": 32, "slug": "32_the_broken_mirror.md", "short": "Broken Mirror", "tag": "Chapter 32 / Homochirality"},
+    {"num": 33, "slug": "33_the_alkaline_cradle.md", "short": "Alkaline Cradle", "tag": "Chapter 33 / Origin of Life"},
+    {"num": 34, "slug": "34_the_caustic_lens.md", "short": "Caustic Lens", "tag": "Chapter 34 / Gravitational Lensing"},
+    {"num": 35, "slug": "35_the_homeostatic_tide.md", "short": "Homeostatic Tide", "tag": "Chapter 35 / Neurobiology of Sleep"},
 ]
 
 def format_inline(text: str) -> str:
@@ -501,7 +506,7 @@ def main():
 {articles_html}
 
     <footer class="colophon">
-      <p>Observations · 30 Essays on Deep Time, Living Systems, and Human Consciousness</p>
+      <p>Observations · {len(CHAPTER_INFO)} Essays on Deep Time, Living Systems, and Human Consciousness</p>
       <p>Hand-crafted with zero third-party dependencies by Van Schulist (@VanSchulist / Existential Cloud)</p>
       <p style="margin-top: 8px; opacity: 0.7;">Open Source · MIT / CC BY-NC-SA 4.0</p>
     </footer>

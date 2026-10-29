@@ -18,7 +18,7 @@ As an American CS undergrad and indie builder running Existential Cloud, my days
 
 Taking time to step back from algorithmic metrics and actually gaze out at reality felt like opening a window in a crowded server closet and looking up at the night sky. I pulled up late-2026 observational papers from JWST, ecological surveys of subterranean mycorrhizal webs, deep-sea expeditions south of Tasmania, paleobotanical stomatal indices, the July 2024 Busy Beaver milestone, ASML High-NA lithography, quantum biology in avian eyes, Freeman Dyson's physical eschatology, redwood negative-pressure hydraulics, single-particle Cryo-EM vitrification, the AMOC ocean conveyor, CERN LHCb baryon CP violation, Project CETI's sperm whale phonetic alphabet, the DESI cosmic web map, the primordial ribosomal RNA engine, quantum spacetime foam constraints, fungal electrical spiking, and the geometry of sparse autoencoders.
 
-I synthesized those observations into this 30-chapter anthology: **Observations** (~32,200 words across 30 publication-grade essays).
+I synthesized those observations into this 35-chapter anthology: **Observations** (~38,400 words across 35 publication-grade essays).
 
 ---
 
@@ -56,6 +56,11 @@ I synthesized those observations into this 30-chapter anthology: **Observations*
 | **28** | [The Cephalopod Synapse](chapters/28_the_cephalopod_synapse.md) | Coleoid octopus, squid, and cuttlefish neural plasticity; adenosine-to-inosine (A-to-I) RNA editing recoding over 60% of the nervous system proteome (over 13,000 codons); ADAR enzymes adapting to seasonal ocean temperatures; and decentralized consciousness across eight semi-autonomous arms. |
 | **29** | [The Magnetar Pulse](chapters/29_the_magnetar_pulse.md) | Ultra-dense neutron stars with fields reaching $10^{10} \text{ to } 10^{11} \text{ Tesla}$; exceeding the Schwinger QED critical limit ($B_Q \approx 4.414 \times 10^9 \text{ Tesla}$); NASA IXPE observation of vacuum birefringence in polarized X-rays; photon splitting ($\gamma \to \gamma + \gamma$); and Fast Radio Bursts (FRBs). |
 | **30** | [The Entropy of Forgetting](chapters/30_the_entropy_of_forgetting.md) | Rolf Landauer's 1961 thermodynamic bound ($Q_{\text{min}} = k_B T \ln 2$); Charles Bennett's discovery of logically and thermodynamically reversible computation (Fredkin & Toffoli gates); computing is fundamentally free—only the erasure of information dissipates heat; and our cosmic role as the universe's memory. |
+| **31** | [The Muon Wobble and the Lattice Horizon](chapters/31_the_muon_wobble.md) | Fermilab E989 final measurement pinning the anomalous magnetic moment $a_\mu$ to 127 ppb; the apparent $5\sigma$ tension with dispersive calculations; and BMW supercomputing Lattice QCD resolving the discrepancy from first principles. |
+| **32** | [The Broken Mirror and Cosmic Homochirality](chapters/32_the_broken_mirror.md) | Why all proteins use L-amino acids and all nucleic acids use D-sugars; electroweak parity violation ($Z^0$ boson exchange); ultraviolet circularly polarized light in interstellar nebulae; and Murchison meteorite carbonaceous chondrites carrying up to 18% L-isovaline excess. |
+| **33** | [The Alkaline Cradle and the Proton Engine](chapters/33_the_alkaline_cradle.md) | The Lost City Hydrothermal Field on the Atlantis Massif; ultramafic olivine serpentinization producing warm alkaline effluents (pH 9–11) packed with $H_2$; Hadean acidic oceans; and natural inorganic proton gradients ($\Delta\text{pH} \approx 4.5$) driving prebiotic metabolism before the origin of ATP synthase. |
+| **34** | [The Caustic Lens and the Invisible Clumps](chapters/34_the_caustic_lens.md) | Gravitational lensing as cosmic telescopes; Earendel (WHL0137-LS) at $z = 6.2$ magnified 4,000x to 40,000x across the Sunrise Arc; and using caustic ripples to probe cold dark matter subhalos down to solar-mass scales. |
+| **35** | [The Homeostatic Tide and the Architecture of Sleep](chapters/35_the_homeostatic_tide.md) | The evolutionary necessity of sleep; hippocampal Sharp-Wave Ripples (150–250 Hz) replaying daytime experience to neocortex at 20x speed; Giulio Tononi's Synaptic Homeostasis Hypothesis (SHY); global dendritic downscaling; and forgetting as the engine of abstraction. |
 
 ---
 
@@ -66,13 +71,13 @@ Following the Existential Cloud **Zero-Dependency** standard, this repository in
 ### 1. Terminal Reader (`observations.py`)
 Run the pure Python stdlib terminal reader with smooth ANSI typography:
 ```bash
-# Read interactively (menu with chapters 1-30)
+# Read interactively (menu with chapters 1-35)
 python observations.py
 
 # Read a specific chapter instantly
-python observations.py -c 30 --instant
+python observations.py -c 35 --instant
 
-# Live full-text search across all 30 chapters
+# Live full-text search across all 35 chapters
 python observations.py --search "ribozyme"
 
 # Chapter metrics, word counts, and reading times
@@ -81,7 +86,7 @@ python observations.py --stats
 # List all chapters and metadata
 python observations.py --list
 
-# Read all 30 chapters continuously
+# Read all 35 chapters continuously
 python observations.py --all --instant
 ```
 
@@ -89,7 +94,7 @@ python observations.py --all --instant
 Hand-crafted under our `anti-ai-web-craftsmanship` design guidelines:
 * No neon gradients, no generic glassmorphism cards.
 * Warm Japanese paper palette (`#F8F5EE`), deep ink typography, and eye-friendly dark stone mode (`#121314`).
-* Tabbed access across all 30 chapters with sticky chapter navigation and top reading progress indicator.
+* Tabbed access across all 35 chapters with sticky chapter navigation and top reading progress indicator.
 * Double-click [`viewer.html`](viewer.html) in your browser for an immediate offline reading sanctuary.
 
 ### 3. Markdown Source
