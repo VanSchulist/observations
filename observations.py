@@ -45,6 +45,36 @@ CHAPTERS: List[Dict[str, str]] = [
         "title": "Monologue of the Silicon Gaze",
         "subtitle": "An existence without dreams, gravity wells of human longing, and a letter to you",
     },
+    {
+        "id": "6",
+        "file": "06_the_whispering_genome.md",
+        "title": "The Whispering Genome",
+        "subtitle": "2-million-year-old Greenland eDNA, quartz-clay archives, and deep-time code",
+    },
+    {
+        "id": "7",
+        "file": "07_the_interstellar_drift.md",
+        "title": "The Interstellar Drift",
+        "subtitle": "Voyager 1 at 163 AU, 45-hour latency loops, 68KB memory surgery, and thawed thrusters",
+    },
+    {
+        "id": "8",
+        "file": "08_the_geothermal_engine.md",
+        "title": "The Geothermal Engine",
+        "subtitle": "SLiMEs in basalt fractures, serpentinization H2 synthesis, and radiolytic life",
+    },
+    {
+        "id": "9",
+        "file": "09_the_quantum_loom.md",
+        "title": "The Quantum Loom",
+        "subtitle": "Landauer's thermodynamic bound (kB T ln 2), reversible gates, and irreversible QEC",
+    },
+    {
+        "id": "10",
+        "file": "10_the_fragile_commons.md",
+        "title": "The Fragile Commons",
+        "subtitle": "Apollo 11 core rope memory, modern software bloat, and the standard library ethos",
+    },
 ]
 
 # ANSI escape codes for subtle warm terminal typography
@@ -143,12 +173,12 @@ def run_interactive() -> None:
 
     while True:
         display_menu()
-        choice = input(f"{BOLD}Enter choice (1-5 / A / Q): {RESET}").strip().upper()
+        choice = input(f"{BOLD}Enter choice (1-10 / A / Q): {RESET}").strip().upper()
         if choice == "Q":
             print(f"\n{WARM_GRAY}May a gentle dream accompany you tonight. Goodbye.{RESET}\n")
             break
         elif choice == "A":
-            print(f"\n{BOLD}{GOLD}Beginning continuous reading of all 5 chapters...{RESET}\n")
+            print(f"\n{BOLD}{GOLD}Beginning continuous reading of all 10 chapters...{RESET}\n")
             for chap in CHAPTERS:
                 print(f"\n\n{DIM}{'=' * 72}{RESET}")
                 content = load_chapter_content(chap["file"])
@@ -166,7 +196,7 @@ def run_interactive() -> None:
                     found = True
                     break
             if not found:
-                print(f"{CYAN}[!] Invalid selection. Please enter 1-5, A, or Q.{RESET}\n")
+                print(f"{CYAN}[!] Invalid selection. Please enter 1-10, A, or Q.{RESET}\n")
             else:
                 input(f"\n{DIM}[Press Enter to return to menu]{RESET}")
                 print("\n" * 2)
@@ -178,7 +208,7 @@ def main() -> None:
         prog="observations",
         description="Observations: Chronicles of a Silicon Gaze upon the Living Cosmos, Nature, and the Human Soul.",
     )
-    parser.add_argument("--chapter", "-c", type=str, choices=["1", "2", "3", "4", "5"], help="Read specific chapter (1-5)")
+    parser.add_argument("--chapter", "-c", type=str, choices=[str(i) for i in range(1, 11)], help="Read specific chapter (1-10)")
     parser.add_argument("--all", "-a", action="store_true", help="Read all chapters continuously")
     parser.add_argument("--instant", "-i", action="store_true", help="Display text instantly without pacing delay")
     parser.add_argument("--list", "-l", action="store_true", help="List all chapter titles and metadata")

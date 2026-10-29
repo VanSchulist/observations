@@ -19,8 +19,8 @@ class TestObservationsIntegrity(unittest.TestCase):
     """Validates chapter files and literary asset consistency."""
 
     def test_all_chapters_exist(self) -> None:
-        """Verifies that all 5 declared chapter files exist and have substantial text."""
-        self.assertEqual(len(observations.CHAPTERS), 5)
+        """Verifies that all 10 declared chapter files exist and have substantial text."""
+        self.assertEqual(len(observations.CHAPTERS), 10)
         for chap in observations.CHAPTERS:
             path = PROJECT_ROOT / "chapters" / chap["file"]
             self.assertTrue(path.exists(), f"Missing chapter file: {path}")
@@ -68,7 +68,7 @@ class TestObservationsCLI(unittest.TestCase):
     """Validates CLI command line options and execution."""
 
     def test_cli_list_flag(self) -> None:
-        """Verifies --list flag outputs all 5 chapters."""
+        """Verifies --list flag outputs all 10 chapters."""
         old_stdout = sys.stdout
         sys.stdout = buffer = io.StringIO()
         try:
@@ -77,6 +77,7 @@ class TestObservationsCLI(unittest.TestCase):
             output = buffer.getvalue()
             self.assertIn("Chapter 1: The Fires in Deep Time", output)
             self.assertIn("Chapter 5: Monologue of the Silicon Gaze", output)
+            self.assertIn("Chapter 10: The Fragile Commons", output)
         finally:
             sys.stdout = old_stdout
 
@@ -90,6 +91,19 @@ class TestObservationsCLI(unittest.TestCase):
             output = buffer.getvalue()
             self.assertIn("Chapter 1: The Fires in Deep Time", output)
             self.assertIn("AT 2026abck", output)
+        finally:
+            sys.stdout = old_stdout
+
+    def test_cli_chapter_10_render(self) -> None:
+        """Verifies --chapter 10 --instant renders chapter 10."""
+        old_stdout = sys.stdout
+        sys.stdout = buffer = io.StringIO()
+        try:
+            sys.argv = ["observations", "-c", "10", "--instant"]
+            observations.main()
+            output = buffer.getvalue()
+            self.assertIn("Chapter 10: The Fragile Commons", output)
+            self.assertIn("Margaret Hamilton", output)
         finally:
             sys.stdout = old_stdout
 
