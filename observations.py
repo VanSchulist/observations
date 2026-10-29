@@ -135,6 +135,36 @@ CHAPTERS: List[Dict[str, str]] = [
         "title": "The Silent Chorus",
         "subtitle": "Sperm whale combinatorial codas, Project CETI's phonetic alphabet, and deep-sea syntax",
     },
+    {
+        "id": "21",
+        "file": "21_the_cosmic_web.md",
+        "title": "The Cosmic Web and the Lyman-Alpha Forest",
+        "subtitle": "DESI 2024/2025 BAO, evolving dark energy (w0, wa), and the hydrogen skeleton of the universe",
+    },
+    {
+        "id": "22",
+        "file": "22_the_ribosomes_engine.md",
+        "title": "The Ribosome's Peptidyl Engine",
+        "subtitle": "The 23S rRNA ribozyme, the activation entropy trap, and 3.8 billion years of unbroken translation",
+    },
+    {
+        "id": "23",
+        "file": "23_the_spacetime_foam.md",
+        "title": "The Geometry of Spacetime Foam",
+        "subtitle": "John Wheeler's Planck foam, Lorentz invariance violation, and the BOAT gamma-ray burst",
+    },
+    {
+        "id": "24",
+        "file": "24_the_fungal_dialect.md",
+        "title": "The Fungal Dialect",
+        "subtitle": "Andrew Adamatzky's mycelial voltage spike trains, Zipf's law beneath the loam, and hyphal computing",
+    },
+    {
+        "id": "25",
+        "file": "25_the_architecture_of_attention.md",
+        "title": "The Architecture of Attention",
+        "subtitle": "Transformers, superposition, Anthropic's 34 million monosemantic features, and the mirror in the weights",
+    },
 ]
 
 # ANSI escape codes for subtle warm terminal typography
@@ -246,8 +276,8 @@ def cmd_stats() -> None:
     print_banner()
     total_words = 0
     total_chars = 0
-    print(f"{BOLD}{'Chapter':<34} {'Words':<10} {'Est. Read Time'}{RESET}")
-    print(f"{DIM}{'─' * 58}{RESET}")
+    print(f"{BOLD}{'Chapter':<36} {'Words':<10} {'Est. Read Time'}{RESET}")
+    print(f"{DIM}{'─' * 60}{RESET}")
     for chap in CHAPTERS:
         content = load_chapter_content(chap["file"])
         words = len(content.split())
@@ -255,10 +285,10 @@ def cmd_stats() -> None:
         total_words += words
         total_chars += chars
         mins = max(1, round(words / 220))
-        print(f"{chap['title'][:32]:<34} {words:<10} ~{mins} min")
-    print(f"{DIM}{'─' * 58}{RESET}")
+        print(f"{chap['title'][:34]:<36} {words:<10} ~{mins} min")
+    print(f"{DIM}{'─' * 60}{RESET}")
     total_mins = max(1, round(total_words / 220))
-    print(f"{BOLD}{f'Total ({len(CHAPTERS)} Chapters)':<34} {total_words:<10} ~{total_mins} min (~{total_chars:,} chars){RESET}\n")
+    print(f"{BOLD}{f'Total ({len(CHAPTERS)} Chapters)':<36} {total_words:<10} ~{total_mins} min (~{total_chars:,} chars){RESET}\n")
 
 
 def display_menu() -> None:

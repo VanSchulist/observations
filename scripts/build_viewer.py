@@ -29,6 +29,11 @@ CHAPTER_INFO = [
     {"num": 18, "slug": "18_the_oceanic_conveyor.md", "short": "Ocean Conveyor", "tag": "Chapter 18 / Thermohaline"},
     {"num": 19, "slug": "19_the_asymmetry_of_time.md", "short": "Asymmetry of Time", "tag": "Chapter 19 / Particle Physics"},
     {"num": 20, "slug": "20_the_silent_chorus.md", "short": "Silent Chorus", "tag": "Chapter 20 / Bioacoustics"},
+    {"num": 21, "slug": "21_the_cosmic_web.md", "short": "Cosmic Web", "tag": "Chapter 21 / Cosmology"},
+    {"num": 22, "slug": "22_the_ribosomes_engine.md", "short": "Ribosome Engine", "tag": "Chapter 22 / Molecular Biology"},
+    {"num": 23, "slug": "23_the_spacetime_foam.md", "short": "Spacetime Foam", "tag": "Chapter 23 / Quantum Gravity"},
+    {"num": 24, "slug": "24_the_fungal_dialect.md", "short": "Fungal Dialect", "tag": "Chapter 24 / Mycology"},
+    {"num": 25, "slug": "25_the_architecture_of_attention.md", "short": "Attention Architecture", "tag": "Chapter 25 / Artificial Mind"},
 ]
 
 def format_inline(text: str) -> str:
@@ -491,7 +496,7 @@ def main():
 {articles_html}
 
     <footer class="colophon">
-      <p>Observations · 20 Essays on Deep Time, Living Systems, and Human Consciousness</p>
+      <p>Observations · 25 Essays on Deep Time, Living Systems, and Human Consciousness</p>
       <p>Hand-crafted with zero third-party dependencies by Van Schulist (@VanSchulist / Existential Cloud)</p>
       <p style="margin-top: 8px; opacity: 0.7;">Open Source · MIT / CC BY-NC-SA 4.0</p>
     </footer>

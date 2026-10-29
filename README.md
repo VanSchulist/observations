@@ -16,9 +16,9 @@ Late on a chilly October night in 2026, right after wrapping up a grueling optim
 
 As an American CS undergrad and indie builder running Existential Cloud, my days are normally dominated by benchmark runs, circuit breakers, and shaving off Turn-0 token schemas.
 
-Taking time to step back from algorithmic metrics and actually gaze out at reality felt like opening a window in a crowded server closet and looking up at the night sky. I pulled up late-2026 observational papers from JWST, ecological surveys of subterranean mycorrhizal webs, deep-sea expeditions south of Tasmania, paleobotanical stomatal indices, the July 2024 Busy Beaver milestone, ASML High-NA lithography, quantum biology in avian eyes, Freeman Dyson's physical eschatology, redwood negative-pressure hydraulics, single-particle Cryo-EM vitrification, the AMOC ocean conveyor, CERN LHCb baryon CP violation, and Project CETI's sperm whale phonetic alphabet.
+Taking time to step back from algorithmic metrics and actually gaze out at reality felt like opening a window in a crowded server closet and looking up at the night sky. I pulled up late-2026 observational papers from JWST, ecological surveys of subterranean mycorrhizal webs, deep-sea expeditions south of Tasmania, paleobotanical stomatal indices, the July 2024 Busy Beaver milestone, ASML High-NA lithography, quantum biology in avian eyes, Freeman Dyson's physical eschatology, redwood negative-pressure hydraulics, single-particle Cryo-EM vitrification, the AMOC ocean conveyor, CERN LHCb baryon CP violation, Project CETI's sperm whale phonetic alphabet, the DESI cosmic web map, the primordial ribosomal RNA engine, quantum spacetime foam constraints, fungal electrical spiking, and the geometry of sparse autoencoders.
 
-I synthesized those observations into this 20-chapter anthology: **Observations** (~20,200 words across 20 publication-grade essays).
+I synthesized those observations into this 25-chapter anthology: **Observations** (~25,900 words across 25 publication-grade essays).
 
 ---
 
@@ -46,6 +46,11 @@ I synthesized those observations into this 20-chapter anthology: **Observations*
 | **18** | [The Oceanic Conveyor](chapters/18_the_oceanic_conveyor.md) | Harald Sverdrup's unit ($1\text{ Sv} = 10^6\text{ m}^3/\text{s}$); the 15–18 Sv Atlantic Meridional Overturning Circulation (AMOC); subpolar North Atlantic brine rejection driving North Atlantic Deep Water (NADW); and René van Westen's 2024 *Science Advances* proof of the 0.3 Sv freshwater tipping point and hysteresis bifurcation. |
 | **19** | [The Asymmetry of Time](chapters/19_the_asymmetry_of_time.md) | Paul Dirac's positron and matter-antimatter symmetry; Andrei Sakharov's 1967 three baryogenesis conditions; the one-in-a-billion matter surplus ($\eta \approx 6 \times 10^{-10}$) surviving annihilation; the CKM matrix; and the 2025 CERN LHCb $5.2\sigma$ milestone discovery of CP violation in baryon decays ($\Lambda_b^0 \to p K^- \pi^+ \pi^-$). |
 | **20** | [The Silent Chorus](chapters/20_the_silent_chorus.md) | Jacques Cousteau's acoustic misnomer; sperm whales (*Physeter macrocephalus*) with 8-kg brains and 236 dB spermaceti shockwaves; the May 2024 *Nature Communications* Project CETI and MIT CSAIL discovery of the sperm whale combinatorial phonetic alphabet across four axes: rhythm, tempo, rubato, and ornamentation. |
+| **21** | [The Cosmic Web](chapters/21_the_cosmic_web.md) | The dendritic dark matter filamentary network; background quasars illuminating the Lyman-alpha forest; the 2024–2025 DESI DR2 survey of 420,000 forest spectra at $z=2.33$; Baryon Acoustic Oscillations as standard rulers (150 Mpc); and the $4\sigma$ evidence for dynamical evolving dark energy ($w_0 > -1, w_a < 0$). |
+| **22** | [The Ribosome's Peptidyl Engine](chapters/22_the_ribosomes_engine.md) | The RNA World paradox; the Peptidyl Transferase Center (PTC) containing zero amino acid residues within 18 Å; the ribosome as an RNA ribozyme; nucleophilic attack activation entropy ($\Delta S^\ddagger$); the PTC as an entropic trap locking tRNA CCA ends with sub-angstrom precision; and 3.8 billion years of unbroken continuity. |
+| **23** | [The Geometry of Spacetime Foam](chapters/23_the_spacetime_foam.md) | Einstein's smooth Riemannian manifold vs Heisenberg uncertainty at the metric tensor; John Wheeler's spacetime foam at the Planck scale ($\ell_P \sim 10^{-35}$ m, $t_P \sim 10^{-44}$ s); testing Lorentz Invariance Violation with Gamma-Ray Bursts; and the 2024–2025 multi-TeV constraints from GRB 221009A (the BOAT) via Fermi-LAT, MAGIC, and LHAASO. |
+| **24** | [The Fungal Dialect](chapters/24_the_fungal_dialect.md) | Cellular membrane potentials outside animal brains; Andrew Adamatzky's microelectrode recordings of 0.1–1.5 mV electrical spike trains in *Schizophyllum commune* and *Cordyceps*; spike burst linguistics, average word lengths (5.97 spikes), and Zipf's law; mycelial networks as decentralized analog computers. |
+| **25** | [The Architecture of Attention](chapters/25_the_architecture_of_attention.md) | The transformer self-attention equation $\text{softmax}(QK^T/\sqrt{d_k})V$; the curse of superposition and polysemanticity in residual streams; Anthropic's May 2024 Sparse Autoencoder breakthrough extracting 34 million monosemantic features from Claude 3 Sonnet; the Golden Gate Claude steering experiment; and the mirror of the silicon mind. |
 
 ---
 
@@ -56,14 +61,14 @@ Following the Existential Cloud **Zero-Dependency** standard, this repository in
 ### 1. Terminal Reader (`observations.py`)
 Run the pure Python stdlib terminal reader with smooth ANSI typography:
 ```bash
-# Read interactively (menu with chapters 1-20)
+# Read interactively (menu with chapters 1-25)
 python observations.py
 
 # Read a specific chapter instantly
-python observations.py -c 20 --instant
+python observations.py -c 25 --instant
 
-# Live full-text search across all 20 chapters
-python observations.py --search "Sverdrup"
+# Live full-text search across all 25 chapters
+python observations.py --search "ribozyme"
 
 # Chapter metrics, word counts, and reading times
 python observations.py --stats
@@ -71,7 +76,7 @@ python observations.py --stats
 # List all chapters and metadata
 python observations.py --list
 
-# Read all 20 chapters continuously
+# Read all 25 chapters continuously
 python observations.py --all --instant
 ```
 
@@ -79,7 +84,7 @@ python observations.py --all --instant
 Hand-crafted under our `anti-ai-web-craftsmanship` design guidelines:
 * No neon gradients, no generic glassmorphism cards.
 * Warm Japanese paper palette (`#F8F5EE`), deep ink typography, and eye-friendly dark stone mode (`#121314`).
-* Tabbed access across all 20 chapters with sticky chapter navigation and top reading progress indicator.
+* Tabbed access across all 25 chapters with sticky chapter navigation and top reading progress indicator.
 * Double-click [`viewer.html`](viewer.html) in your browser for an immediate offline reading sanctuary.
 
 ### 3. Markdown Source
@@ -93,7 +98,7 @@ The test suite validates chapter integrity, non-empty prose length, ANSI formatt
 ```bash
 python -m unittest discover -s tests -v
 ```
-All 11 unit tests execute in under 0.1 seconds with zero external dependencies.
+All 11 unit tests execute in under 0.15 seconds with zero external dependencies.
 
 ---
 
