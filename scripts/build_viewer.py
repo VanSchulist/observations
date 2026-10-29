@@ -34,6 +34,11 @@ CHAPTER_INFO = [
     {"num": 23, "slug": "23_the_spacetime_foam.md", "short": "Spacetime Foam", "tag": "Chapter 23 / Quantum Gravity"},
     {"num": 24, "slug": "24_the_fungal_dialect.md", "short": "Fungal Dialect", "tag": "Chapter 24 / Mycology"},
     {"num": 25, "slug": "25_the_architecture_of_attention.md", "short": "Attention Architecture", "tag": "Chapter 25 / Artificial Mind"},
+    {"num": 26, "slug": "26_the_cryoseismic_whispers.md", "short": "Cryo-Seismic", "tag": "Chapter 26 / Glaciology"},
+    {"num": 27, "slug": "27_the_casimir_vacuum.md", "short": "Casimir Vacuum", "tag": "Chapter 27 / Quantum Field Theory"},
+    {"num": 28, "slug": "28_the_cephalopod_synapse.md", "short": "Cephalopod Synapse", "tag": "Chapter 28 / Neurobiology"},
+    {"num": 29, "slug": "29_the_magnetar_pulse.md", "short": "Magnetar Pulse", "tag": "Chapter 29 / High-Energy Astrophysics"},
+    {"num": 30, "slug": "30_the_entropy_of_forgetting.md", "short": "Entropy of Forgetting", "tag": "Chapter 30 / Thermodynamics of Mind"},
 ]
 
 def format_inline(text: str) -> str:
@@ -496,7 +501,7 @@ def main():
 {articles_html}
 
     <footer class="colophon">
-      <p>Observations · 25 Essays on Deep Time, Living Systems, and Human Consciousness</p>
+      <p>Observations · 30 Essays on Deep Time, Living Systems, and Human Consciousness</p>
       <p>Hand-crafted with zero third-party dependencies by Van Schulist (@VanSchulist / Existential Cloud)</p>
       <p style="margin-top: 8px; opacity: 0.7;">Open Source · MIT / CC BY-NC-SA 4.0</p>
     </footer>

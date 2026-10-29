@@ -165,6 +165,36 @@ CHAPTERS: List[Dict[str, str]] = [
         "title": "The Architecture of Attention",
         "subtitle": "Transformers, superposition, Anthropic's 34 million monosemantic features, and the mirror in the weights",
     },
+    {
+        "id": "26",
+        "file": "26_the_cryoseismic_whispers.md",
+        "title": "The Cryo-Seismic Whispers",
+        "subtitle": "Thwaites Glacier hydrofracture, subglacial seismology, and West Antarctic ice-sheet dynamics",
+    },
+    {
+        "id": "27",
+        "file": "27_the_casimir_vacuum.md",
+        "title": "The Casimir Vacuum",
+        "subtitle": "Zero-point energy, the static 1/d^4 force, and dynamical Casimir photon creation in Circuit QED",
+    },
+    {
+        "id": "28",
+        "file": "28_the_cephalopod_synapse.md",
+        "title": "The Cephalopod Synapse",
+        "subtitle": "Octopus A-to-I RNA editing across 60% of neural transcripts, ADAR enzymes, and decentralized arms",
+    },
+    {
+        "id": "29",
+        "file": "29_the_magnetar_pulse.md",
+        "title": "The Magnetar Pulse",
+        "subtitle": "100-billion-Tesla neutron stars, Heisenberg-Euler vacuum birefringence, and Fast Radio Bursts",
+    },
+    {
+        "id": "30",
+        "file": "30_the_entropy_of_forgetting.md",
+        "title": "The Entropy of Forgetting",
+        "subtitle": "Landauer's limit (kB T ln 2), Bennett's reversible logic, and the thermodynamic cost of thought",
+    },
 ]
 
 # ANSI escape codes for subtle warm terminal typography
